@@ -3,5 +3,5 @@
 # and add a string to the page returned when querying Nginx at its root
 sudo apt update && upgrade
 sudo apt install nginx -y
-sudo echo "Holberton School" > /var/www/html/index.html
+sudo echo "Holberton School" | sudo tee /var/www/html/index.html
 sudo service nginx restart
