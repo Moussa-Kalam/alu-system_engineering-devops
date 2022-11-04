@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure nginx server redirecting to another page
+sudo apt-get -y install nginx
+sudo service nginx start
+newlines="\\\trewrite ^/redirect_me https://w3schools.com/ permanent;"
+sudo sed -i "53i $newlines" /etc/nginx/sites-available/default
+sudo service nginx restart 
+sudo service nginx reload
