@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Script that install nginx on my web-01
-# and add a string to the page returned when querying Nginx at its root
-sudo apt update && upgrade
-sudo apt install nginx -y
-sudo echo "Holberton School" | sudo tee /var/www/html/index.html
-sudo service nginx restart
