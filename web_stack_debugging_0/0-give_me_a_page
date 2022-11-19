@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# Restart httpd
-sudo systemctl restart apache
+sudo systemctl restart apache2
